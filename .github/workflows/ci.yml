@@ -23,12 +23,12 @@ jobs:
       fail-fast: false
       matrix:
         ruby-version:
-          - "3.2"
           - "3.3"
           - "3.4"
           - "4.0"
           - "jruby-9.4"
-          - "jruby-10.0.2.0"
+          - "jruby-10.0"
+          - "jruby-10.1"
 
     steps:
       - name: Check out
