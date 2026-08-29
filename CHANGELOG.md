@@ -4,6 +4,30 @@
 
 _None outstanding_
 
+# 5.0.0 / 2026-08-30
+
+_**Codename:** I can't believe it's not CGI_
+
+## Small improvements
+
+- [#327](https://github.com/prometheus/client_ruby/pull/327),
+    [#330](https://github.com/prometheus/client_ruby/pull/330) Add Ruby 4.0 support: We
+    now support Ruby 4.0. `CGI` was removed from the default gems, so we've changed our
+    internal uses of it to `URI`.
+
+## Breaking changes
+
+- [#328](https://github.com/prometheus/client_ruby/pull/328),
+    [#335](https://github.com/prometheus/client_ruby/pull/335) Drop support for old
+    Ruby versions:
+    Ruby versions below 3.3 are no longer supported upstream, and
+    `client_ruby` is no longer tested against them. Likewise, JRuby below 9.4 is no
+    longer supported upstream, so we've dropped support for older versions.
+
+    **This may be a breaking change**. As we no longer test `client_ruby`
+    against those versions, continued functioning on them is purely down to chance. Any
+    issues specific to them will be closed as invalid.
+
 # 4.2.5 / 2025-07-05
 
 _**Codename:** Surprise dependency_
